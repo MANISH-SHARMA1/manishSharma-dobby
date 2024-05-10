@@ -6,10 +6,7 @@ import {
   setItem,
 } from "./localStorageManager";
 
-let baseURL = "http://localhost:4000/";
-if (process.env.NODE_ENV === "production") {
-  baseURL = process.env.REACT_APP_SERVER_BASE_URL;
-}
+let baseURL = "https://manish-sharma-dobby-64lhehm6w-manish-sharma1s-projects.vercel.app/";
 
 export const axiosClient = axios.create({
   baseURL,
